@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Validation Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<p>Welcome me hearty! Almost there ! I'm supposing you got all three parts now eh? rearrange them and submit, please note that the first letter must be a capital letter. </p>
+	<b></b>
+	<label for="inputField">Enter the secret password here:</label>
+	
+	<input type="text" id="inputField" name="inputField">
+	<button onclick="checkCode()">Check Code</button>
+	<p id="outputField"></p>
+	<script>
+		function checkCode() {
+  var input = document.getElementById("inputField").value;
+  var output = document.getElementById("outputField");
+  if (input === "Rabrooba") {
+    output.innerHTML = "Does this look familiar? ;)" + "<br><img src='treasure.jpeg'>";
+  } else {
+    output.innerHTML = "No, me hearty!";
+  }
+}
+	</script>
+</body>
+</html>
